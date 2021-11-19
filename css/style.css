@@ -6,36 +6,36 @@
 
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('/fonts/GlacialIndifference-Italic.eot');
+  src: url('../fonts/GlacialIndifference-Italic.eot');
   src: local('Glacial Indifference Italic'), local('GlacialIndifference-Italic'),
-    url('/fonts/GlacialIndifference-Italic.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/GlacialIndifference-Italic.woff') format('woff'),
-    url('/fonts/GlacialIndifference-Italic.ttf') format('truetype'),
-    url('/fonts/GlacialIndifference-Italic.svg#GlacialIndifference-Italic') format('svg');
+    url('../fonts/GlacialIndifference-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GlacialIndifference-Italic.woff') format('woff'),
+    url('../fonts/GlacialIndifference-Italic.ttf') format('truetype'),
+    url('../fonts/GlacialIndifference-Italic.svg#GlacialIndifference-Italic') format('svg');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('/fonts/GlacialIndifference-Regular.eot');
+  src: url('../fonts/GlacialIndifference-Regular.eot');
   src: local('Glacial Indifference Regular'), local('GlacialIndifference-Regular'),
-    url('/fonts/GlacialIndifference-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/GlacialIndifference-Regular.woff') format('woff'),
-    url('/fonts/GlacialIndifference-Regular.ttf') format('truetype'),
-    url('/fonts/GlacialIndifference-Regular.svg#GlacialIndifference-Regular') format('svg');
+    url('../fonts/GlacialIndifference-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GlacialIndifference-Regular.woff') format('woff'),
+    url('../fonts/GlacialIndifference-Regular.ttf') format('truetype'),
+    url('../fonts/GlacialIndifference-Regular.svg#GlacialIndifference-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('/fonts/GlacialIndifference-Bold.eot');
+  src: url('../fonts/GlacialIndifference-Bold.eot');
   src: local('Glacial Indifference-Bold'), local('GlacialIndifference-Bold'),
-    url('/fonts/GlacialIndifference-Bold.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/GlacialIndifference-Bold.woff') format('woff'),
-    url('/fonts/GlacialIndifference-Bold.ttf') format('truetype'),
-    url('/fonts/GlacialIndifference-Bold.svg#GlacialIndifference-Bold') format('svg');
+    url('../fonts/GlacialIndifference-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GlacialIndifference-Bold.woff') format('woff'),
+    url('../fonts/GlacialIndifference-Bold.ttf') format('truetype'),
+    url('../fonts/GlacialIndifference-Bold.svg#GlacialIndifference-Bold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
@@ -210,7 +210,7 @@ a:focus{
   padding: 0;
   list-style: none;
   color: white;
-} 
+}
 
 .navbar .pages.collapse.open{
   display: block;
@@ -258,7 +258,7 @@ a:focus{
     padding: 0;
     list-style: none;
     float: right;
-  } 
+  }
 
   .navbar .pages li{
     display: inline-block;
@@ -334,7 +334,7 @@ a:focus{
     border-radius: .03em;
 }
 
-.navicon:before, 
+.navicon:before,
 .navicon:after {
     display: block;
     content: "";
@@ -391,14 +391,14 @@ a:focus{
 header.text h2 {
   position: relative;
   min-height: 5vh;
-  
+
   padding: 4em 2em 2em 2em;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   background: rgba(0, 186, 179, 0.7);
   color: white;
   opacity: .9;
@@ -410,18 +410,18 @@ header.text h2 {
 header.hero{
   position: relative;
   min-height: 80vh;
-  
+
   padding: 8em 2em;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  
+
   color: white;
   opacity: .9;
   margin-bottom: 1em;
@@ -430,9 +430,9 @@ header.hero{
 header.hero::before {
   content: '';
   position: absolute;
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   z-index: -1;
   background: rgba(0, 186, 179, 0.7);
@@ -479,11 +479,11 @@ header.hero h2{
  * sections
  ******************/
 
-section h1, 
-section h2, 
-section h3, 
-section h4, 
-section h5, 
+section h1,
+section h2,
+section h3,
+section h4,
+section h5,
 section h6{
   text-align: center;
 }
@@ -496,7 +496,6 @@ section.slanted{
 section.slanted .content{
   transform: skewY(-3deg);
   padding: 5rem 15px;
-  overflow: auto;
 }
 
 section.slanted.twocolumn{
@@ -564,11 +563,11 @@ section.quote .person{
   section.slanted .content{
     padding: 10rem 15px;
   }
-  
+
   section.slanted.twocolumn{
     flex-wrap: wrap;
   }
-  
+
   section.slanted.twocolumn .subpage{
     flex-grow: 1;
     flex-basis: 40%;
@@ -613,7 +612,7 @@ section.quote .person{
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
-input[type="button"].button-primary 
+input[type="button"].button-primary
 {
   color: #00bab3;
   background-color: #FFF;
@@ -633,7 +632,7 @@ input[type="button"].button-primary:focus
 {
   color: #FFF;
   background-color: #00bab3;
-  border-color: #00bab3; 
+  border-color: #00bab3;
 }
 
 /****************************
@@ -715,7 +714,7 @@ footer a,
 footer a:visited{
   color: white;
   text-align: center;
-  margin: 0 1vw; 
+  margin: 0 1vw;
   display: inline-block;
 }
 
@@ -736,7 +735,7 @@ footer a:focus{
   width: 60vw;
   height: 20vh;
   display: block;
-  background-image: url('/images/Banner.jpg');
+  background-image: url('../images/Banner.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -765,22 +764,22 @@ footer a:focus{
  ****************************/
 
 header.hero.index{
-   background-image: url('/images/foto1.jpg');
+   background-image: url('../images/foto1.jpg');
 }
 
 section#speakers .subpage.image{
-  background-image: url('/images/Foto-Spreker.jpg');
+  background-image: url('../images/Foto-Spreker.jpg');
   background-position: center 80%;
 }
 
 section#location .subpage.image{
-  background-image: url('/images/Foto-Spiegel.jpg');
+  background-image: url('../images/Foto-Spiegel.jpg');
   background-position: center 30%;
 }
 
 
 section#snic .subpage.image{
-  background-image: url('/images/foto_kijken.jpg');
+  background-image: url('../images/foto_kijken.jpg');
   background-position: right 20%;
 }
 
@@ -788,19 +787,19 @@ section#snic .subpage.image{
 .video{
   position: relative;
   min-height: 70vh;
-  
+
   padding: 8em 2em;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  background-image: url('/images/fotozaal.jpg');
+
+  background-image: url('../images/fotozaal.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  
+
   color: white;
   opacity: .9;
 }
@@ -808,9 +807,9 @@ section#snic .subpage.image{
 .video::before {
   content: '';
   position: absolute;
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   z-index: -1;
   background: rgba(0, 186, 179, 0.7);
@@ -818,7 +817,7 @@ section#snic .subpage.image{
 
 .youtube{
   text-align: center;
-  width: 100%; 
+  width: 100%;
   position: relative;
   color: white;
 }
@@ -841,7 +840,7 @@ section#snic .subpage.image{
  * Speakers
  ****************************/
 header.hero.speakers{
-  background-image: url('/images/Foto-Spreker2.jpg');
+  background-image: url('../images/Foto-Spreker2.jpg');
 }
 
 .timetable {
@@ -976,7 +975,7 @@ section.panel .photo img {
  * Partners
  ****************************/
 header.hero.partners{
-  background-image: url('/images/Foto-Sponsor.jpg');
+  background-image: url('../images/Foto-Sponsor.jpg');
 }
 
 .box{
@@ -1023,54 +1022,54 @@ header.hero.partners{
 }
 
 header.hero.organisation{
-  background-image: url('/images/SNiC-14.jpg');
+  background-image: url('../images/SNiC-14.jpg');
   background-position: center 40%;
 }
 
 section#mimi .subpage.image{
-  background-image: url('/images/SNiC-12.jpg');
+  background-image: url('../images/SNiC-12.jpg');
   background-position: center 20%;
   min-height: 300px;
 }
 
 section#guussieboy .subpage.image{
-  background-image: url('/images/SNiC-10.jpg');
+  background-image: url('../images/SNiC-10.jpg');
   background-position: center 20%;
   min-height: 300px;
 }
 
 section#entn .subpage.image{
-  background-image: url('/images/SNiC-7.jpg');
+  background-image: url('../images/SNiC-7.jpg');
   background-position: center 20%;
   min-height: 300px;
 }
 
 section#harm .subpage.image{
-  background-image: url('/images/SNiC-8.jpg');
+  background-image: url('../images/SNiC-8.jpg');
   background-position: center 20%;
   min-height: 300px;
 }
 
 section#marty .subpage.image{
-  background-image: url('/images/SNiC-11.jpg');
+  background-image: url('../images/SNiC-11.jpg');
   background-position: center 20%;
   min-height: 300px;
 }
 
 section#renac .subpage.image{
-  background-image: url('/images/SNiC-6.jpg');
+  background-image: url('../images/SNiC-6.jpg');
   background-position: center 20%;
   min-height: 300px;
 }
 
 section#xabi .subpage.image{
-  background-image: url('/images/SNiC-9.jpg');
+  background-image: url('../images/SNiC-9.jpg');
   background-position: center 20%;
   min-height: 300px;
 }
 
 @media (min-width: 550px) {
-  
+
   section#mimi .subpage.image,
   section#guussieboy .subpage.image,
   section#entn .subpage.image,
@@ -1100,7 +1099,7 @@ section#xabi .subpage.image{
  ****************************/
 
 header.hero.location{
-  background-image: url('/images/Foto-Spiegel.jpg');
+  background-image: url('../images/Foto-Spiegel.jpg');
 }
 
 #map{
@@ -1133,7 +1132,7 @@ header.hero.location{
 
 header.hero.login{
   min-height: 0;
-  background-image: url('/images/23369577356_2d8183a751_o.jpg');
+  background-image: url('../images/23369577356_2d8183a751_o.jpg');
   background-position: center 90%;
 }
 
@@ -1179,7 +1178,7 @@ header.hero.login{
  ****************************/
 header.hero.register{
   min-height: 0;
-  background-image: url('/images/23369577356_2d8183a751_o.jpg');
+  background-image: url('../images/23369577356_2d8183a751_o.jpg');
   background-position: center 90%;
 }
 
@@ -1324,7 +1323,7 @@ section.intro p.participate {
 
   header.hero.nedap{
     min-height: 0;
-    background-image: url('/images/bedrijven/nedap/andre.jpg');
+    background-image: url('../images/bedrijven/nedap/andre.jpg');
     background-color: #373636;
     display:block;
     background-size: contain;
@@ -1350,7 +1349,7 @@ section.intro p.participate {
  */
 @media (min-width: 800px) {
   header.hero.nedap{
-    background-image: url('/images/bedrijven/nedap/andre.jpg');
+    background-image: url('../images/bedrijven/nedap/andre.jpg');
     background-position: 100% 100%;
     min-height: 80vh;
     opacity: 1;
@@ -1364,12 +1363,12 @@ section.intro p.participate {
   }
 }
 section#flock .subpage.image{
-  background-image: url('/images/bedrijven/nedap/flock.jpg');
+  background-image: url('../images/bedrijven/nedap/flock.jpg');
   background-position: center 80%;
 }
 
 section#paris .subpage.image{
-  background-image: url('/images/bedrijven/nedap/paris.jpg');
+  background-image: url('../images/bedrijven/nedap/paris.jpg');
   background-position: center 80%;
 }
 
@@ -1388,7 +1387,7 @@ section#paris .subpage.image{
  ****************************/
 
 header.hero.achmea{
-  background-image: url('/images/Hero_Achmea.jpg');
+  background-image: url('../images/Hero_Achmea.jpg');
   min-height: 50vh;
 }
 
@@ -1397,7 +1396,7 @@ header.hero.achmea{
  ****************************/
 
 header.hero.kpmg {
-  background-image: url('/images/Hero_KPMG.jpg');
+  background-image: url('../images/Hero_KPMG.jpg');
   min-height: 50vh;
 }
 
@@ -1406,7 +1405,7 @@ header.hero.kpmg {
  ****************************/
 
 header.hero.topicus {
-  background-image: url('/images/Hero_Topicus.jpg');
+  background-image: url('../images/Hero_Topicus.jpg');
   min-height: 50vh;
 }
 
