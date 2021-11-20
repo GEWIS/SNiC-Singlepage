@@ -5,41 +5,27 @@
  **************************************************************************/
 
 @font-face {
-  font-family: 'Glacial Indifference';
-  src: url('../fonts/GlacialIndifference-Italic.eot');
-  src: local('Glacial Indifference Italic'), local('GlacialIndifference-Italic'),
-    url('../fonts/GlacialIndifference-Italic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GlacialIndifference-Italic.woff') format('woff'),
-    url('../fonts/GlacialIndifference-Italic.ttf') format('truetype'),
-    url('../fonts/GlacialIndifference-Italic.svg#GlacialIndifference-Italic') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Glacial Indifference';
-  src: url('../fonts/GlacialIndifference-Regular.eot');
-  src: local('Glacial Indifference Regular'), local('GlacialIndifference-Regular'),
-    url('../fonts/GlacialIndifference-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GlacialIndifference-Regular.woff') format('woff'),
-    url('../fonts/GlacialIndifference-Regular.ttf') format('truetype'),
-    url('../fonts/GlacialIndifference-Regular.svg#GlacialIndifference-Regular') format('svg');
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Cond.woff2') format('woff2'),
+  url('../fonts/MyriadPro-Cond.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Glacial Indifference';
-  src: url('../fonts/GlacialIndifference-Bold.eot');
-  src: local('Glacial Indifference-Bold'), local('GlacialIndifference-Bold'),
-    url('../fonts/GlacialIndifference-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/GlacialIndifference-Bold.woff') format('woff'),
-    url('../fonts/GlacialIndifference-Bold.ttf') format('truetype'),
-    url('../fonts/GlacialIndifference-Bold.svg#GlacialIndifference-Bold') format('svg');
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-BoldCond.woff2') format('woff2'),
+  url('../fonts/MyriadPro-BoldCond.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
+:root {
+  --main-color: #E2411B;
+  --secondary-color: #082C4F;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -49,7 +35,7 @@
 }
 
 body {
-  font-family: 'Glacial Indifference', "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: 'Myriad Pro', "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -79,6 +65,16 @@ a:focus{
   width: 8rem;
   margin: 2em auto;
   background-color: currentColor;
+}
+
+.background-celerit-orange {
+  background-color: var(--main-color)!important;
+  color:white;
+}
+
+.background-celerit-blue {
+  background-color: var(--secondary-color)!important;
+  color:white;
 }
 
 .background-snic-grey{
@@ -150,8 +146,9 @@ a:focus{
   top: 0;
   width: 100%;
   padding: 0 10px;
+  opacity: 0.9;
 
-  background-color: rgba(0, 186, 179, 0.9);
+  background-color: #041E37;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 
   font-size: 2rem;
@@ -409,9 +406,7 @@ header.text h2 {
 
 header.hero{
   position: relative;
-  min-height: 80vh;
-
-  padding: 8em 2em;
+  /*min-height: 80vh;*/
 
   display: flex;
   flex-direction: column;
@@ -423,7 +418,6 @@ header.hero{
   background-size: cover;
 
   color: white;
-  opacity: .9;
   margin-bottom: 1em;
 }
 
@@ -435,12 +429,19 @@ header.hero::before {
   bottom: 0;
   left: 0;
   z-index: -1;
-  background: rgba(0, 186, 179, 0.7);
+  background: var(--secondary-color);
 }
 
 header.hero .logo{
   max-width: 80%;
-  width: 20em;
+  width: 50em;
+}
+
+header.hero video {
+  /*max-width: 100%;*/
+  max-height: 100%;
+  margin-top: 50px;
+  max-width: 1500px;
 }
 
 header.hero p {
@@ -524,7 +525,19 @@ section.slanted.twocolumn .content{
   margin: 0 auto;
 }
 
+section.intro {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 section.intro p {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+section.intro .content {
+  max-width: 600px;
+  margin: auto;
   text-align: left;
   padding-bottom: 10px;
 }
@@ -544,6 +557,19 @@ section.quote .person{
   color: #00bab3;
 }
 
+#contact {
+  margin: auto;
+}
+
+#contact b {
+  display: block;
+}
+
+#contact .contact-entry {
+  margin-left: 20px;
+  display: block;
+}
+
 @media (min-width: 400px) {
   section.quote .content{
     font-size: 2.5rem;
@@ -561,6 +587,8 @@ section.quote .person{
 /* Larger than tablet */
 @media (min-width: 750px) {
   section.slanted .content{
+    max-width: 800px;
+    margin: auto;
     padding: 10rem 15px;
   }
 
@@ -763,9 +791,9 @@ footer a:focus{
  * Index
  ****************************/
 
-header.hero.index{
-   background-image: url('../images/foto1.jpg');
-}
+/*header.hero.index{*/
+/*   background-image: url('../images/foto1.jpg');*/
+/*}*/
 
 section#speakers .subpage.image{
   background-image: url('../images/Foto-Spreker.jpg');
@@ -779,7 +807,7 @@ section#location .subpage.image{
 
 
 section#snic .subpage.image{
-  background-image: url('../images/foto_kijken.jpg');
+  background-image: url('../images/zaal.jpg');
   background-position: right 20%;
 }
 
@@ -1009,64 +1037,6 @@ header.hero.partners{
   margin-bottom: 40px;
 }
 
-/****************************
- * Organisation
- ****************************/
-.committee-profile .name{
-  margin: 0;
-}
-
-.committee-profile .function{
-  text-align: center;
-  font-size: 3rem;
-}
-
-header.hero.organisation{
-  background-image: url('../images/SNiC-14.jpg');
-  background-position: center 40%;
-}
-
-section#mimi .subpage.image{
-  background-image: url('../images/SNiC-12.jpg');
-  background-position: center 20%;
-  min-height: 300px;
-}
-
-section#guussieboy .subpage.image{
-  background-image: url('../images/SNiC-10.jpg');
-  background-position: center 20%;
-  min-height: 300px;
-}
-
-section#entn .subpage.image{
-  background-image: url('../images/SNiC-7.jpg');
-  background-position: center 20%;
-  min-height: 300px;
-}
-
-section#harm .subpage.image{
-  background-image: url('../images/SNiC-8.jpg');
-  background-position: center 20%;
-  min-height: 300px;
-}
-
-section#marty .subpage.image{
-  background-image: url('../images/SNiC-11.jpg');
-  background-position: center 20%;
-  min-height: 300px;
-}
-
-section#renac .subpage.image{
-  background-image: url('../images/SNiC-6.jpg');
-  background-position: center 20%;
-  min-height: 300px;
-}
-
-section#xabi .subpage.image{
-  background-image: url('../images/SNiC-9.jpg');
-  background-position: center 20%;
-  min-height: 300px;
-}
 
 @media (min-width: 550px) {
 
@@ -1091,166 +1061,6 @@ section#xabi .subpage.image{
   section#xabi .subpage.image{
     min-height: 420px;
   }
-}
-
-
-/****************************
- * Location
- ****************************/
-
-header.hero.location{
-  background-image: url('../images/Foto-Spiegel.jpg');
-}
-
-#map{
-  height:70vh;
-  border-top: 3px solid #00bab3;
-}
-
-#map .gm-style {
-  font-family: 'Glacial Indifference', "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-}
-
-#map #content,
-#map #content p{
-  text-align: center;
-}
-
-#map #content h1{
-  font-size: 2em;
-  margin-bottom: 0;
-}
-
-#map #content .separator {
-  margin: 1em auto;
-}
-
-
-/****************************
- * Login
- ****************************/
-
-header.hero.login{
-  min-height: 0;
-  background-image: url('../images/23369577356_2d8183a751_o.jpg');
-  background-position: center 90%;
-}
-
-.form {
-  max-width: 40em;
-  margin: 0 auto;
-}
-
-.form-group {
-  padding-bottom: 10px;
-}
-
-.form-control {
-  width: 100%;
-}
-
-.form.form-signin {
-  max-width: 25em;
-}
-
-.form.form-signin .row {
-  margin: 10px;
-}
-
-.login-separator{
-  text-align:center;
-  margin-bottom: 1rem;
-}
-
-.login-separator:before,
-.login-separator:after {
-  width: 15%;
-  height: 1px;
-  background: #adadad;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 10px;
-  content: '';
-}
-
-/****************************
- * Register
- ****************************/
-header.hero.register{
-  min-height: 0;
-  background-image: url('../images/23369577356_2d8183a751_o.jpg');
-  background-position: center 90%;
-}
-
-.form-register {
-  max-width: 40em;
-  margin: 0 auto;
-  padding: 10px;
-}
-
-.register p {
-  margin: 10px auto;
-  padding: 10px;
-  text-align: left;
-}
-
-/****************************
- * Profile
- ****************************/
-
-section.profile {
-  margin:10px;
-}
-
-.interests {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-top: -10px;
-}
-.interests .interest {
-  flex: 1 0 200px;
-  box-sizing: border-box;
-  color: #171e42;
-  padding: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-@media (min-width: 410px) {
-  .interests .interest {
-    max-width: calc(50% - 10px);
-  }
-}
-
-
-/****************************
- * Users
- ****************************/
-
-.buses.table {
-  max-width: 50em;
-  margin: auto;
-  width:100%;
-  margin-bottom: 20px;
-}
-
-/****************************
- * Users
- ****************************/
-
-.section.users {
-  overflow:auto;
-}
-
-.button-users {
-  padding: 0px;
-  width: 100%;
-}
-
-.users.table {
-  margin: 0 0 2em 0;
-  width: 100%;
 }
 
 /****************************
@@ -1305,73 +1115,6 @@ section.intro p.participate {
   text-align: center
 }
 
-/****************************
- * Connect better
- ****************************/
-.connectbetter p {
-  padding: 10px;
-}
-
-/****************************
- * Nedap Bedrijfsprofiel
- ****************************/
-
-/*
- * Hero image on small devices. quote above image
- */
-@media(max-width: 800px){
-
-  header.hero.nedap{
-    min-height: 0;
-    background-image: url('../images/bedrijven/nedap/andre.jpg');
-    background-color: #373636;
-    display:block;
-    background-size: contain;
-    background-position: 50% 100%;
-    opacity: 1;
-    padding:0px;
-    padding-bottom: calc(49% + 1em)
-  }
-
-  .hero-nedap-text{
-    width: 100%;
-    padding: 65px 0px 20px 0px;
-  }
-
-  h2.nedap,
-  p.nedap {
-    text-align: center;
-  }
-}
-
-/*
- *Hero image on larger devices. Quote inside the image
- */
-@media (min-width: 800px) {
-  header.hero.nedap{
-    background-image: url('../images/bedrijven/nedap/andre.jpg');
-    background-position: 100% 100%;
-    min-height: 80vh;
-    opacity: 1;
-  }
-
-  h2.nedap,
-  .separator.nedap,
-  p.nedap {
-    text-align: center;
-    color: black !important;
-  }
-}
-section#flock .subpage.image{
-  background-image: url('../images/bedrijven/nedap/flock.jpg');
-  background-position: center 80%;
-}
-
-section#paris .subpage.image{
-  background-image: url('../images/bedrijven/nedap/paris.jpg');
-  background-position: center 80%;
-}
-
 .background-nedap-orange{
   background: #FF8700 !important;
   color: white;
@@ -1382,36 +1125,14 @@ section#paris .subpage.image{
   color: white;
 }
 
-/****************************
- * Achmea Bedrijfsprofiel
- ****************************/
-
-header.hero.achmea{
-  background-image: url('../images/Hero_Achmea.jpg');
-  min-height: 50vh;
-}
-
-/****************************
- * KPMG Bedrijfsprofiel
- ****************************/
-
-header.hero.kpmg {
-  background-image: url('../images/Hero_KPMG.jpg');
-  min-height: 50vh;
-}
-
-/****************************
- * Topicus Bedrijfsprofiel
- ****************************/
-
-header.hero.topicus {
-  background-image: url('../images/Hero_Topicus.jpg');
-  min-height: 50vh;
-}
 
 /****************************
  * One-off elements
  ****************************/
+
+.GEWIS-link {
+
+}
 
 .privacy {
   font-size: 1.5em;
