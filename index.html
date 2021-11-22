@@ -40,7 +40,7 @@
     <div class="content">
         <h2>CELERITY</h2>
         <div class="separator" role="separator"></div>
-        <p>The theme of next year's SNiC will be CelerIT: The swiftness of technology. <i>Celer</i> is latin for
+        <p>The theme of SNiC 2022 will be CelerIT: The swiftness of technology. <i>Celer</i> is latin for
             swiftness but instead of looking at movement we invite you to take a look at the incredible speed at which
             modern day technology is progressing.</p>
     </div>
@@ -83,7 +83,7 @@
             <span class="contact-entry"><a href="mailto:info@celerit.nl">info@celerit.nl</a></span></p>
             <p><b>BUSINESS EMAIL</b>
                 <span class="contact-entry"><a href="mailto:partners@celerit.nl">partners@celerit.nl</a></span></p>
-            <p><b>PHONE NUMBER</b><span class="contact-entry">(+31) 6 13279467</span></p>
+            <p><b>PHONE NUMBER</b><span class="contact-entry">(+31) (040) 247 2815</span></p>
             <p><b>POSTAL ADDRESS</b><span class="contact-entry">GEWIS t.a.v. CelerIT</span><span class="contact-entry">Postbus 513</span><span class="contact-entry">Eindhoven, 5600MB</span></p>
             </div>
         </div>
@@ -96,6 +96,17 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 <script src="js/jQuery.curtail.min.js"></script>
+<script>
+  jQuery(function($) {
+    $('button.toggle').click(function(evt){
+      var target = $(this).data('target');
+      $(target).toggleClass('open');
+      $(this).toggleClass('open');
+    });
+  });
+
+  $('.dropdown-toggle').dropdown();
+</script>
 </body>
 
 </html>

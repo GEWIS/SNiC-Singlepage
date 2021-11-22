@@ -540,6 +540,8 @@ section.intro .content {
   margin: auto;
   text-align: left;
   padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 section.quote{
