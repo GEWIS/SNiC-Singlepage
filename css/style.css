@@ -32,6 +32,7 @@
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -234,6 +235,38 @@ a:focus{
 
 .dropdown-menu {
   width:100%;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.thumbnails {
+  overflow: hidden;
+}
+.thumbnails li {
+  float: left;
+  width: 25%;
+  position: relative;
+  padding: 1px;
+  min-height: 100px;
+  overflow: hidden;
+}
+.thumbnails li img {
+  max-width: 100%;
+  display: block;
+  position: absolute;
+  max-height: 100px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 
 @media (min-width: 800px) {
@@ -488,6 +521,40 @@ section h5,
 section h6{
   text-align: center;
 }
+
+section.poweredby {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-top: 100px;
+}
+
+section.poweredby:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: left bottom;
+  transform: skewY(-7deg);
+}
+
+section.poweredby:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+}
+
+section.poweredby .content{
+  padding: 5rem 15px;
+}
+
 
 section.slanted{
   transform: skewY(3deg);
